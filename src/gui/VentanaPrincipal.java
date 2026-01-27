@@ -11,6 +11,9 @@ public class VentanaPrincipal extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	
+	//Declarar los paneles como atributos
+	private Panel_inicio panel_inicio;
 
 	/**
 	 * Launch the application.
@@ -33,11 +36,18 @@ public class VentanaPrincipal extends JFrame {
 	 */
 	public VentanaPrincipal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-
+		panel_inicio = new Panel_inicio(this);
+		panel_inicio.setPreferredSize(new java.awt.Dimension(1280, 720));
+		setContentPane(panel_inicio);
+		pack();
+		setLocationRelativeTo(null);
+		Panel_inicio();
+	}
+	
+	public void Panel_inicio() {
+		setContentPane(panel_inicio);
+		revalidate();
+		repaint();
 	}
 
 }
