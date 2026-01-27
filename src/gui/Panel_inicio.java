@@ -8,6 +8,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Color;
+import javax.swing.JScrollPane;
+import javax.swing.JToolBar;
+import javax.swing.JDesktopPane;
+import javax.swing.JInternalFrame;
 
 public class Panel_inicio extends JPanel implements ActionListener{
 
