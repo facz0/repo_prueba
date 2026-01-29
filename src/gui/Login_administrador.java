@@ -1,6 +1,8 @@
 package gui;
 
 import javax.swing.JPanel;
+import javax.swing.JTextPane;
+import java.awt.Color;
 
 public class Login_administrador extends JPanel {
 
@@ -14,7 +16,11 @@ public class Login_administrador extends JPanel {
 		this.ventanaPrincipal = principal;
 		setPreferredSize(new java.awt.Dimension(1280, 720));
 		setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(192, 192, 192));
+		panel.setBounds(488, 113, 453, 525);
+		add(panel);
 
 	}
-
 }

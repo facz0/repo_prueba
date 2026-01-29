@@ -72,10 +72,4 @@ public class Panel_inicio extends JPanel implements ActionListener{
 			ventanaPrincipal.Login_usuario();
 		}
 	}
-	
-	public void actionPerformedbtnAdministrador(ActionEvent e) {
-	}
-	
-	public void actionPerformedbtnUsuario(ActionEvent e) {
-	}
 }
